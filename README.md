@@ -22,3 +22,16 @@ P/S: Since this extension serves our work needs, if you use it and feel any feat
 2. Enable **Developer mode**. I am currently working on completing and adding features to the Chrome Webstore soon!
 3. Then, **Load unpacked** and select the PolyMetrics folder. Activate the extension.
 4. Visit Codecanyon or ThemeForest to use it!
+
+### ScreenShot
+![Flatsome | Multi-Purpose Responsive WooCommerce Theme](screenshot/Flatsome-WordPress-Theme.png)
+
+![Quick follow customer](screenshot/Follow-customers.png)
+
+![Perfex - Powerful Open Source CRM](screenshot/PerfexCRM.png)
+
+![PolyUtilities for Perfex CRM: Quick Access Menu, Custom JS, CSS, and More](screenshot/PolyUtilities-for-PerfexCRM.png)
+
+![Product Designer for WooCommerce WordPress | Lumise](screenshot/Product-designer-for-WooCommerce-WordPress-Lumise.png)
+
+![REST API module for Perfex CRM - Connect your Perfex CRM with third party applications](screenshot/RestAPI-for-PerfexCRM.png)
