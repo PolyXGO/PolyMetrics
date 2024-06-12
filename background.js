@@ -1,0 +1,1 @@
+(async()=>{let s=null;chrome.tabs.onUpdated.addListener((async function(t,e,a){a&&a.id===t&&a.status!==s&&(s=a.status,"complete"===a.status&&chrome.tabs.sendMessage(t,{url:a.url}))}))})();
