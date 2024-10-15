@@ -8,6 +8,7 @@ This extension supports analyzing product price information on the Envato market
 - **Total days since the product was published** on Envato.
 - **Most recent update date:** If this date falls within a few months, the product is still being supported and has users.
 - **Quickly follow the author or customers** when viewing reviews and comments.
+- **Toolbar for inserting Envato HTML code** to assist in customer responses.
 
 ### Planned Features:
 
