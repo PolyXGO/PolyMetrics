@@ -29,6 +29,8 @@ P/S: Since this extension serves our work needs, if you use it and feel any feat
 
 ![Quick follow customer](screenshot/Follow-customers.png)
 
+![Toolbar for inserting Envato HTML code](screenshot/ext-toolbar-comment-1.png)
+
 ![Perfex - Powerful Open Source CRM](screenshot/PerfexCRM.png)
 
 ![PolyUtilities for Perfex CRM: Quick Access Menu, Custom JS, CSS, and More](screenshot/PolyUtilities-for-PerfexCRM.png)
