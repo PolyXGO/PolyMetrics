@@ -14,7 +14,9 @@ This extension supports analyzing product price information on the Envato market
   
 **If you find this source code helpful, consider buying me a coffee to support my work!** ☕
 
-[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-%23FFDD00.svg?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://paypal.me/polyxgo)
+<a href="https://paypal.me/polyxgo" target="_blank">
+  <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%23FFDD00.svg?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy me a coffee">
+</a>
 
 </div>
 
@@ -63,3 +65,13 @@ P/S: Since this extension serves our work needs, if you use it and feel any feat
 ![Product Designer for WooCommerce WordPress | Lumise](screenshot/Product-designer-for-WooCommerce-WordPress-Lumise.png)
 
 ![REST API module for Perfex CRM - Connect your Perfex CRM with third party applications](screenshot/PolyMetrics-REST-API-module-for-Perfex-CRM.jpg)
+
+<div align="center">
+  
+**If you find this source code helpful, consider buying me a coffee to support my work!** ☕
+
+<a href="https://paypal.me/polyxgo" target="_blank">
+  <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%23FFDD00.svg?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy me a coffee">
+</a>
+
+</div>
