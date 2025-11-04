@@ -10,6 +10,15 @@ This extension supports analyzing product price information on the Envato market
 - **Quickly follow the author or customers** when viewing reviews and comments.
 - **Toolbar for inserting Envato HTML code** to assist in customer responses.
 
+If you find this source code helpful, consider buying me a coffee to support my work! ☕
+<a href="https://paypal.me/polyxgo" 
+   style="display:inline-block; padding:10px 20px; 
+          background:linear-gradient(90deg, #ff7e5f, #feb47b); 
+          color:#fff; font-weight:bold; border-radius:8px; 
+          text-decoration:none; transition:0.3s;">
+  ☕ Buy me a coffee
+</a>
+
 ### Planned Features:
 
 - **Store a list of product information** for comparison purposes.
