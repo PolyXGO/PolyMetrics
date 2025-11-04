@@ -24,17 +24,34 @@ P/S: Since this extension serves our work needs, if you use it and feel any feat
 3. Then, **Load unpacked** and select the PolyMetrics folder. Activate the extension.
 4. Visit Codecanyon or ThemeForest to use it!
 
+### Changelogs:
+- **Charts**: Provides visual charts to compare revenue, expenses, taxes, and more.
+- **Exchange Rate Settings**: Supports integration of any currency exchange rates to estimate revenue/profit based on the author’s preferred currency.
+- **Tax Settings**: Allows integration of custom tax rates for easy reference. Since individuals and companies may have different tax rules, this feature makes it convenient to adjust accordingly.
+- **Interface Update**: Refines the design style to minimize layout changes to Envato’s interface.
+- **Tools**: Adds utilities such as scroll to top/bottom and fixed Envato tab lists (Product Info, Analytics, Support, History, etc.) for quick access from anywhere on the page — reducing time spent switching between Envato tabs.
+- **Description Editor**: Enables live preview of detailed product descriptions while editing HTML, providing a more visual editing experience and helping authors avoid unwanted HTML tag errors.
+- **Related Links**: Allows authors to set up related links for product development within their system — such as documentation links, internal project info links, or demo links. This helps authors quickly navigate to relevant work areas for editing or updating, reducing workflow time.
+
 ### ScreenShot
-![Flatsome | Multi-Purpose Responsive WooCommerce Theme](screenshot/Flatsome-WordPress-Theme.png)
+![Flatsome | Multi-Purpose Responsive WooCommerce Theme](screenshot/PolyMetrics-Flatsome-theme.jpg)
+
+![Editor Preview](screenshot/PolyMetrics-Description-Editor-Preview.jpg)
+
+![Currency settings](screenshot/PolyMetrics-Currency-Settings.jpg)
+
+![Quick links settings](screenshot/PolyMetrics-Quick-Links.jpg)
 
 ![Quick follow customer](screenshot/Follow-customers.png)
 
 ![Toolbar for inserting Envato HTML code](screenshot/ext-toolbar-comment-1.png)
 
-![Perfex - Powerful Open Source CRM](screenshot/PerfexCRM.png)
+![FlexiNote for Perfex CRM](screenshot/PolyMetrics-FlexiNote-for-PerfexCRM.jpg)
+
+![Perfex - Powerful Open Source CRM](screenshot/PolyMetrics-Perfex-CRM.jpg)
 
 ![PolyUtilities for Perfex CRM: Quick Access Menu, Custom JS, CSS, and More](screenshot/PolyUtilities-for-PerfexCRM.png)
 
 ![Product Designer for WooCommerce WordPress | Lumise](screenshot/Product-designer-for-WooCommerce-WordPress-Lumise.png)
 
-![REST API module for Perfex CRM - Connect your Perfex CRM with third party applications](screenshot/RestAPI-for-PerfexCRM.png)
+![REST API module for Perfex CRM - Connect your Perfex CRM with third party applications](screenshot/PolyMetrics-REST-API-module-for-Perfex-CRM.jpg)

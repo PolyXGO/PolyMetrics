@@ -1,8 +1,8 @@
 {
    "manifest_version": 3,
    "name": "Poly Metrics",
-   "permissions": [],
-   "version": "1.1.3",
+   "permissions": ["storage"],
+   "version": "1.2.0",
    "description": "Manage, track products, analyze prices, revenue, profit, and costs.",
    "icons": {
       "16": "assets/icons/icon16.png",
@@ -19,12 +19,12 @@
    },
    "content_scripts": [ {
       "css": [ "assets/css/styles.css","assets/css/sweetalert2/11.7.31/sweetalert2.min.css"],
-      "js": ["assets/js/moment/2.29.1/moment.min.js", "assets/js/moment/2.29.1/moment-timezone-with-data.min.js", "assets/js/common.js","assets/js/jquery/jquery-3.7.1.slim.min.js","assets/js/scripts.js","assets/js/sweetalert2/11.7.31/sweetalert2.min.js"],
+      "js": ["assets/js/moment/2.29.1/moment.min.js", "assets/js/moment/2.29.1/moment-timezone-with-data.min.js", "assets/js/common.js","assets/js/jquery/jquery-3.7.1.slim.min.js","assets/js/scripts.js","assets/js/sweetalert2/11.7.31/sweetalert2.min.js", "assets/js/chartjs/4.4.0/chart.umd.min.js"],
       "matches": ["https://codecanyon.net/*", "https://themeforest.net/*"]
    } ],
    "web_accessible_resources": [
       {
-        "resources": ["pages/home.html"],
+        "resources": ["pages/home.html", "pages/index.html"],
         "matches": ["https://codecanyon.net/*", "https://themeforest.net/*"],
         "use_dynamic_url": true
       }

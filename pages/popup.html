@@ -6,17 +6,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PolyMetrics - PolyXGO</title>
-  <script src="../assets/js/jquery/jquery-3.7.1.slim.min.js"></script>
-  <script src="../assets/js/setting.js"></script>
+  <link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
-  <div style="display:block;text-align: center;width:220px">
-    <div><img src="../assets/icons/icon48.png" /></div>
-    <div>PolyMetrics - PolyXGO</div>
-    <div><a style="text-decoration: none;color:blue" href="#" id="polyMetricsLink" target="_blank"
-        rel="nofollow">Settings</a></div>
+  <div class="poly-popup-container">
+    <div class="poly-popup-header">
+      <img src="../assets/icons/icon48.png" alt="PolyMetrics" class="poly-popup-logo" />
+      <h2 class="poly-popup-title">PolyMetrics</h2>
+      <p class="poly-popup-subtitle">by PolyXGO</p>
+    </div>
+    
+    <div class="poly-popup-content">
+      <div class="poly-popup-info">
+        <p class="poly-info-text">Analyze Envato products with detailed revenue, profit, and sales analytics.</p>
+        <p class="poly-version">Version 1.2.0</p>
+      </div>
+      
+      <div class="poly-popup-menu">
+        <a href="#" class="poly-menu-link" id="open-settings">
+          <span class="poly-menu-icon">⚙️</span>
+          <span class="poly-menu-text">Settings</span>
+          <span class="poly-menu-arrow">→</span>
+        </a>
+        
+        <a href="#" class="poly-menu-link" id="open-documentation">
+          <span class="poly-menu-icon">📚</span>
+          <span class="poly-menu-text">Documentation</span>
+          <span class="poly-menu-arrow">→</span>
+        </a>
+        
+        <a href="https://github.com/polyxgo/polymetrics" target="_blank" class="poly-menu-link">
+          <span class="poly-menu-icon">💻</span>
+          <span class="poly-menu-text">GitHub</span>
+          <span class="poly-menu-arrow">↗</span>
+        </a>
+      </div>
+      
+      <div class="poly-popup-footer">
+        <p>© 2025 PolyXGO. All rights reserved.</p>
+      </div>
+    </div>
   </div>
+  
+  <script src="popup.js"></script>
 </body>
 
 </html>

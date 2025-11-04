@@ -1,21 +1,221 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PolyMetrics - PolyXGO</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/sweetalert2/11.7.31/sweetalert2.min.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" />
-    <script src="../assets/js/jquery/jquery-3.7.1.slim.min.js"></script>
-    <script src="../assets/js/sweetalert2/11.7.31/sweetalert2.min.js"></script>
-    <script src="../assets/js/setting.js"></script>
-    
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PolyMetrics Settings - PolyXGO</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div>
-        The section for managing settings, categories, content, and other features is under development...
+  <div class="poly-page-container">
+    <div class="poly-page-header">
+      <div class="poly-header-left">
+        <img src="../assets/icons/icon48.png" alt="PolyMetrics" class="poly-page-logo" />
+        <div>
+          <h1 class="poly-page-title">PolyMetrics</h1>
+          <p class="poly-page-subtitle">Settings & Documentation</p>
+        </div>
+      </div>
+      <div class="poly-header-right">
+        <span class="poly-page-version">v1.2.0</span>
+      </div>
     </div>
+    
+    <div class="poly-page-content">
+      <div class="poly-tabs-sidebar">
+        <button class="poly-tab-btn active" data-tab="settings">
+          <span class="poly-tab-icon">⚙️</span>
+          <span class="poly-tab-text">Settings</span>
+        </button>
+        <button class="poly-tab-btn" data-tab="documentation">
+          <span class="poly-tab-icon">📚</span>
+          <span class="poly-tab-text">Documentation</span>
+        </button>
+      </div>
+      
+      <div class="poly-tabs-content">
+        <!-- Settings Tab -->
+        <div class="poly-tab-panel active" id="tab-settings">
+          <div class="poly-tab-header">
+            <h2>⚙️ Settings</h2>
+            <p class="poly-tab-desc">Manage currencies, exchange rates, tax, and other preferences</p>
+          </div>
+          
+          <div class="poly-settings-content">
+            <div class="poly-settings-group">
+              <label class="poly-settings-label">Default Tax Rate (%)</label>
+              <input type="number" id="settings-tax" class="poly-settings-input" min="0" max="100" step="1">
+              <span class="poly-settings-help">Corporate/Personal income tax rate</span>
+            </div>
+            
+            <div class="poly-settings-group">
+              <label class="poly-settings-label">Default Currency</label>
+              <select id="settings-currency" class="poly-settings-select"></select>
+            </div>
+            
+            <div class="poly-settings-group">
+              <label class="poly-settings-label">Currencies & Exchange Rates</label>
+              <div class="poly-settings-table-container">
+                <table class="poly-settings-table">
+                  <thead>
+                    <tr>
+                      <th>Code</th>
+                      <th>Name</th>
+                      <th>Symbol</th>
+                      <th>Rate (to USD)</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="currencies-list">
+                    <!-- Dynamic content -->
+                  </tbody>
+                </table>
+                <button id="add-currency-btn" class="poly-btn poly-btn-add">+ Add Currency</button>
+              </div>
+            </div>
+            
+            <div class="poly-settings-actions">
+              <button id="save-settings-btn" class="poly-btn poly-btn-primary">Save Settings</button>
+              <button id="reset-settings-btn" class="poly-btn poly-btn-secondary">Reset to Default</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Documentation Tab -->
+        <div class="poly-tab-panel" id="tab-documentation">
+          <div class="poly-tab-header">
+            <h2>📚 Documentation</h2>
+            <p class="poly-tab-desc">User guide and feature documentation</p>
+          </div>
+          
+          <div class="poly-docs-content">
+            <div class="poly-docs-section">
+              <h3>📊 Overview</h3>
+              <p>PolyMetrics is a powerful Chrome extension for analyzing Envato products. It provides detailed revenue, profit, and sales analytics with interactive charts and customizable currency conversion.</p>
+            </div>
+            
+            <div class="poly-docs-section">
+              <h3>🎯 Features</h3>
+              <ul class="poly-docs-list">
+                <li><strong>Revenue Analysis:</strong> Calculate total revenue, profit before/after tax with detailed breakdown</li>
+                <li><strong>Multi-Currency Support:</strong> Convert amounts to 17+ currencies with real-time exchange rates</li>
+                <li><strong>Interactive Charts:</strong> Bar, Line, Radar, and Polar Area charts for data visualization</li>
+                <li><strong>Quick Links:</strong> Save and access frequently used links (per product page)</li>
+                <li><strong>Author Fee Calculation:</strong> Automatic calculation based on Envato's tiered fee structure (12.5% - 37.5%)</li>
+                <li><strong>Collapsible Details:</strong> Toggle detailed fee breakdown tables with state memory</li>
+              </ul>
+            </div>
+            
+            <div class="poly-docs-section">
+              <h3>💡 How to Use</h3>
+              <ol class="poly-docs-list">
+                <li><strong>Navigate to Product Page:</strong> Open any item page on CodeCanyon or ThemeForest</li>
+                <li><strong>View Analytics:</strong> The extension automatically displays metrics below the product header</li>
+                <li><strong>Adjust Tax Rate:</strong> Input your tax percentage in the toolbar (0-100%)</li>
+                <li><strong>Select Currency:</strong> Choose from dropdown to view amounts in different currencies</li>
+                <li><strong>Update Exchange Rate:</strong> Modify rates in Settings if needed</li>
+                <li><strong>Change Chart Type:</strong> Use dropdown in Revenue Breakdown chart (Bar, Line, Radar, Polar Area)</li>
+                <li><strong>Toggle Details:</strong> Click icon in top-right of fee block to show/hide detailed tables</li>
+                <li><strong>Manage Quick Links:</strong> Click 🔗 icon to add/remove frequently accessed links</li>
+              </ol>
+            </div>
+            
+            <div class="poly-docs-section">
+              <h3>⚙️ Settings</h3>
+              <p><strong>Default Tax Rate:</strong> Set your standard tax percentage (e.g., 20% for corporate tax). This will be the default value when loading product pages.</p>
+              <p><strong>Default Currency:</strong> Choose your preferred currency for display. All amounts will be converted and shown in this currency.</p>
+              <p><strong>Currencies Management:</strong> Add, edit, or remove currencies with custom exchange rates. USD and VND are protected and cannot be removed.</p>
+              <p><strong>Exchange Rates:</strong> All rates are relative to USD (1 USD = rate). For example, VND rate of 23000 means 1 USD = 23000 VND. Update regularly for accuracy.</p>
+            </div>
+            
+            <div class="poly-docs-section">
+              <h3>📈 Charts</h3>
+              <ul class="poly-docs-list">
+                <li><strong>Bar Chart:</strong> Compare revenue, profit, tax side by side (default view)</li>
+                <li><strong>Line Chart:</strong> View trends with smooth curves, best for comparing values</li>
+                <li><strong>Radar Chart:</strong> Multi-dimensional comparison in spider web format</li>
+                <li><strong>Polar Area:</strong> Proportional distribution visualization</li>
+                <li><strong>Pie Chart:</strong> Revenue distribution percentages (Net Profit, Tax, Fees)</li>
+              </ul>
+            </div>
+            
+            <div class="poly-docs-section">
+              <h3>🔗 Quick Links</h3>
+              <p>Quick Links are saved per product page, allowing you to organize related links for each item:</p>
+              <ol class="poly-docs-list">
+                <li>Navigate to a product page</li>
+                <li>Click 🔗 icon in toolbar</li>
+                <li>Add anchor text (display name) and URL</li>
+                <li>Click "View" (👁️) to open link or "Remove" (✕) to delete</li>
+                <li>Save your links - they will appear below the toolbar</li>
+              </ol>
+              <p><strong>Note:</strong> Quick Links are unique to each product URL, so different products can have different link sets.</p>
+            </div>
+            
+            <div class="poly-docs-section">
+              <h3>💾 Data Persistence</h3>
+              <p>All data is automatically saved to Chrome Storage and persists across browser sessions:</p>
+              <ul class="poly-docs-list">
+                <li><strong>Global Settings:</strong> Tax rate, default currency, all currency definitions</li>
+                <li><strong>Per-Page Data:</strong> Quick links (unique per product URL), toggle state</li>
+                <li><strong>Storage Location:</strong> Chrome Local Storage (synced to your profile)</li>
+              </ul>
+            </div>
+            
+            <div class="poly-docs-section">
+              <h3>🆘 Troubleshooting</h3>
+              <ul class="poly-docs-list">
+                <li><strong>Charts not showing:</strong> Refresh the page. Ensure Chart.js library is loaded (check browser console)</li>
+                <li><strong>Toggle not working:</strong> Check console for errors. Ensure jQuery is loaded properly</li>
+                <li><strong>Settings not saving:</strong> Verify Chrome Storage permission in manifest.json</li>
+                <li><strong>Exchange rates outdated:</strong> Update rates manually in Settings tab</li>
+                <li><strong>Quick Links not appearing:</strong> Ensure you're on the correct product page</li>
+              </ul>
+            </div>
+            
+            <div class="poly-docs-section">
+              <h3>📝 Important Notes</h3>
+              <ul class="poly-docs-list">
+                <li>Author fee calculation follows Envato's tiered structure: 12.5% - 37.5% based on lifetime earnings</li>
+                <li>Buyer fee is fixed at $5 per item (Envato standard)</li>
+                <li>All financial calculations are in USD first, then converted to selected currency</li>
+                <li>Date parsing: "2 years ago" → first day of that year; "10 months ago" → first day of that month</li>
+                <li>Toggle state is remembered: if you close the fee breakdown table, it stays closed on reload</li>
+              </ul>
+            </div>
+            
+            <div class="poly-docs-section">
+              <h3>🌍 Supported Currencies</h3>
+              <div class="poly-currency-grid">
+                <div>🇺🇸 USD - US Dollar</div>
+                <div>🇻🇳 VND - Vietnamese Dong</div>
+                <div>🇪🇺 EUR - Euro</div>
+                <div>🇬🇧 GBP - British Pound</div>
+                <div>🇯🇵 JPY - Japanese Yen</div>
+                <div>🇨🇳 CNY - Chinese Yuan</div>
+                <div>🇮🇳 INR - Indian Rupee</div>
+                <div>🇧🇷 BRL - Brazilian Real</div>
+                <div>🇦🇺 AUD - Australian Dollar</div>
+                <div>🇨🇦 CAD - Canadian Dollar</div>
+                <div>🇨🇭 CHF - Swiss Franc</div>
+                <div>🇸🇬 SGD - Singapore Dollar</div>
+                <div>🇭🇰 HKD - Hong Kong Dollar</div>
+                <div>🇰🇷 KRW - South Korean Won</div>
+                <div>🇲🇽 MXN - Mexican Peso</div>
+                <div>🇷🇺 RUB - Russian Ruble</div>
+                <div>🇹🇭 THB - Thai Baht</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
 </body>
 
 </html>
