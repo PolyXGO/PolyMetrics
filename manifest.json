@@ -1,7 +1,7 @@
 {
    "manifest_version": 3,
    "name": "Poly Metrics",
-   "permissions": ["storage"],
+   "permissions": ["storage", "tabs"],
    "version": "1.2.0",
    "description": "Manage, track products, analyze prices, revenue, profit, and costs.",
    "icons": {
@@ -24,7 +24,7 @@
    } ],
    "web_accessible_resources": [
       {
-        "resources": ["pages/home.html", "pages/index.html"],
+        "resources": ["pages/home.html"],
         "matches": ["https://codecanyon.net/*", "https://themeforest.net/*"],
         "use_dynamic_url": true
       }

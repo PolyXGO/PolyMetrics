@@ -30,6 +30,10 @@
           <span class="poly-tab-icon">⚙️</span>
           <span class="poly-tab-text">Settings</span>
         </button>
+        <button class="poly-tab-btn" data-tab="bookmarks">
+          <span class="poly-tab-icon">📑</span>
+          <span class="poly-tab-text">Bookmarks</span>
+        </button>
         <button class="poly-tab-btn" data-tab="documentation">
           <span class="poly-tab-icon">📚</span>
           <span class="poly-tab-text">Documentation</span>
@@ -84,6 +88,44 @@
           </div>
         </div>
         
+        <!-- Bookmarks Tab -->
+        <div class="poly-tab-panel" id="tab-bookmarks">
+          <div class="poly-tab-header">
+            <h2>📑 Bookmarks</h2>
+            <p class="poly-tab-desc">Manage your saved product bookmarks and categories</p>
+          </div>
+          
+          <div class="poly-bookmarks-content">
+            <!-- Category Management -->
+            <div class="poly-settings-group">
+              <div class="poly-bookmarks-section-header">
+                <h3>📂 Categories</h3>
+                <button id="add-bookmark-category-btn" class="poly-btn poly-btn-sm poly-btn-primary">+ New Category</button>
+              </div>
+              <div class="poly-bookmarks-categories" id="bookmark-categories-list">
+                <!-- Dynamic content -->
+              </div>
+            </div>
+            
+            <!-- Bookmarks List -->
+            <div class="poly-settings-group">
+              <div class="poly-bookmarks-section-header">
+                <h3>🔖 My Bookmarks</h3>
+                <div class="poly-bookmarks-filters">
+                  <input type="text" id="bookmark-search" class="poly-input poly-input-sm" placeholder="Search bookmarks...">
+                  <select id="bookmark-filter-category" class="poly-select poly-input-sm">
+                    <option value="">All Categories</option>
+                    <!-- Dynamic options -->
+                  </select>
+                </div>
+              </div>
+              <div class="poly-bookmarks-list" id="bookmarks-list">
+                <!-- Dynamic content -->
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <!-- Documentation Tab -->
         <div class="poly-tab-panel" id="tab-documentation">
           <div class="poly-tab-header">
@@ -103,9 +145,11 @@
                 <li><strong>Revenue Analysis:</strong> Calculate total revenue, profit before/after tax with detailed breakdown</li>
                 <li><strong>Multi-Currency Support:</strong> Convert amounts to 17+ currencies with real-time exchange rates</li>
                 <li><strong>Interactive Charts:</strong> Bar, Line, Radar, and Polar Area charts for data visualization</li>
+                <li><strong>Bookmark System:</strong> Save product pages with categories, search, and quick access panel</li>
                 <li><strong>Quick Links:</strong> Save and access frequently used links (per product page)</li>
                 <li><strong>Author Fee Calculation:</strong> Automatic calculation based on Envato's tiered fee structure (12.5% - 37.5%)</li>
                 <li><strong>Collapsible Details:</strong> Toggle detailed fee breakdown tables with state memory</li>
+                <li><strong>Description Editor:</strong> Live preview with markdown support for product descriptions</li>
               </ul>
             </div>
             
@@ -139,6 +183,44 @@
                 <li><strong>Radar Chart:</strong> Multi-dimensional comparison in spider web format</li>
                 <li><strong>Polar Area:</strong> Proportional distribution visualization</li>
                 <li><strong>Pie Chart:</strong> Revenue distribution percentages (Net Profit, Tax, Fees)</li>
+              </ul>
+            </div>
+            
+            <div class="poly-docs-section">
+              <h3>📑 Bookmark System</h3>
+              <p>Save and organize product pages with a powerful bookmark management system:</p>
+              <h4>Adding Bookmarks:</h4>
+              <ol class="poly-docs-list">
+                <li>Navigate to any product page on CodeCanyon or ThemeForest</li>
+                <li>Click the bookmark icon (📑) next to the product title</li>
+                <li>Select an existing category or create a new one with custom color</li>
+                <li>Click "Save Bookmark" to save the product page</li>
+              </ol>
+              
+              <h4>Viewing Bookmarks:</h4>
+              <ul class="poly-docs-list">
+                <li>Click the floating bookmark button (📑) on the right side of any page</li>
+                <li>A panel slides in from the right showing all your bookmarks</li>
+                <li>Bookmarks are grouped by categories with color-coded labels</li>
+                <li>Use the search box to find bookmarks by title or URL</li>
+                <li>Click category titles to expand/collapse bookmark lists</li>
+              </ul>
+              
+              <h4>Managing Bookmarks:</h4>
+              <ul class="poly-docs-list">
+                <li><strong>Edit:</strong> Click the bookmarked icon on any saved page to edit title or change category</li>
+                <li><strong>Delete:</strong> Use the "Delete" button in the edit modal or manage from Bookmarks tab</li>
+                <li><strong>Categories:</strong> Create, edit, delete categories with custom colors in Settings → Bookmarks tab</li>
+                <li><strong>Search:</strong> Real-time search filters bookmarks as you type</li>
+                <li><strong>Persistent Panel:</strong> Panel state (open/closed) is remembered across page reloads</li>
+              </ul>
+              
+              <h4>Footer Quick Links:</h4>
+              <p>At the bottom of the bookmarks panel, you'll find quick access links to:</p>
+              <ul class="poly-docs-list">
+                <li><strong>⚙️ Settings:</strong> Open settings page to configure tax, currencies, etc.</li>
+                <li><strong>📑 Bookmarks:</strong> Jump directly to bookmark management tab</li>
+                <li><strong>📚 Docs:</strong> Access full documentation</li>
               </ul>
             </div>
             
