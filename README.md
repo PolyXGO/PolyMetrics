@@ -3,6 +3,8 @@
 
 This extension supports analyzing product price information on the Envato marketplace for reference data. If you are researching and looking for ideas from existing products on Envato, this extension can assist you to some extent:
 
+<div><a href="https://www.youtube.com/watch?v=Oed6HvHlfBw" rel="nofollow" target="_blank">WATCH the VIDEO</a></div>
+
 ### 📊 Analytics Features:
 - **List product information** along with price levels and sales numbers based on the author fee level table.
 - **Estimate revenue and profit** before and after tax for each product.
@@ -34,7 +36,6 @@ This extension supports analyzing product price information on the Envato market
 <a href="https://paypal.me/polyxgo" target="_blank">
   <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%23FFDD00.svg?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy me a coffee">
 </a>
-
 </div>
 
 ### How to Use Bookmarks:
