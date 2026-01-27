@@ -137,18 +137,25 @@ jQuery(document).ready(function ($) {
 
     function copyCommentContent($element) {
         // Find nearest parent with class .comment__item or .comment__item-response
+        // Note: closest() returns the FIRST matching ancestor, so if we are in a response
+        // nested in an item, it catches the response first, which is correct.
         let $commentItem = $element.closest('.comment__item, .comment__item-response');
         
         if ($commentItem.length === 0) {
-            console.log('Comment item not found');
+            console.error('PolyMetrics: Comment item not found');
             return;
         }
 
-        // Find .comment__body in comment item
-        let $commentBody = $commentItem.find('.comment__body');
+        // Find .comment__body or .comment__body--response in comment item
+        // Use first() to strictly get the body of THIS item/response, avoiding nested bodies
+        let $commentBody = $commentItem.find('.comment__body, .comment__body--response').first();
         
         if ($commentBody.length === 0) {
-            console.log('Comment body not found');
+            console.error('PolyMetrics: Comment body not found in', $commentItem);
+             // Visual feedback failure
+             let originalText = $element.text();
+             $element.text('Error!');
+             setTimeout(() => $element.text(originalText), 2000);
             return;
         }
 
