@@ -1,0 +1,1362 @@
+/* ============= Flat Design - Modern Poly Metrics Styles ============= */
+
+/* Main container */
+.poly-elements {
+	margin-bottom: 12px;
+	background: #ffffff;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	padding: 10px;
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+/* Header info section */
+.poly-header-info {
+	margin-bottom: 10px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.poly-date-info {
+	display: inline-flex;
+	align-items: center;
+	margin-bottom: 6px;
+	color: #333;
+	font-size: 12px;
+}
+
+/* Toggle button - Icon only, positioned top-right */
+.poly-toggle-btn {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	background: #f5f5f5;
+	color: #555;
+	border: 1px solid #d0d0d0;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	user-select: none;
+	z-index: 10;
+}
+
+.poly-toggle-btn:hover {
+	background: #e8e8e8;
+	border-color: #bbb;
+}
+
+.poly-toggle-btn:active {
+	background: #ddd;
+}
+
+.poly-toggle-btn svg {
+	width: 14px;
+	height: 14px;
+	transition: transform 0.3s ease;
+	display: block;
+}
+
+.poly-toggle-btn svg.poly-rotated {
+	transform: rotate(180deg);
+}
+
+/* Table styles - Minimal Flat design */
+.poly-table, .poly-table-profit{
+	width: 369px;
+}
+.poly-table {
+	border: 1px solid #ddd;
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 11px;
+	background: #fff;
+	margin-top: 6px;
+	transition: opacity 0.3s ease;
+}
+
+.poly-table tr td {
+    vertical-align: top;
+    padding: 4px 6px;
+    line-height: 1.3;
+}
+
+.poly-table thead,
+.poly-table tbody {
+	text-align: center;
+}
+
+.poly-table thead {
+	background: #f5f5f5;
+	color: #333;
+	border-bottom: 2px solid #ddd;
+}
+
+.poly-table thead tr td {
+	padding: 6px 6px;
+	font-weight: 600;
+	border: 1px solid #ddd;
+	font-size: 11px;
+}
+
+.poly-table tbody tr {
+	background: #fff;
+}
+
+.poly-table tbody tr:nth-child(even) {
+	background-color: #fafafa;
+}
+
+.poly-table tbody tr:hover {
+	background-color: #f0f0f0;
+}
+
+.poly-table tr td {
+	border: 1px solid #ddd;
+}
+
+/* Toolbar */
+.poly-toolsbar {
+	width: 100%;
+	margin: 8px 0;
+	padding: 10px;
+	background: #fafafa;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	font-size: 11px;
+	box-sizing: border-box;
+}
+
+.poly-toolbar-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	align-items: center;
+}
+
+.poly-toolbar-item {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.poly-toolbar-item label {
+	font-weight: 600;
+	color: #555;
+	white-space: nowrap;
+}
+
+.poly-toolbar-item input[type="text"],
+.poly-toolbar-item input[type="number"] {
+	padding: 4px 8px;
+	border: 1px solid #d0d0d0;
+	border-radius: 3px;
+	font-size: 11px;
+	width: 60px;
+}
+
+.poly-toolbar-item input[readonly] {
+	background: #f5f5f5;
+	cursor: not-allowed;
+	color: #666;
+}
+
+.poly-toolbar-item select {
+	padding: 4px 8px;
+	border: 1px solid #d0d0d0;
+	border-radius: 3px;
+	font-size: 11px;
+	background: #fff;
+	cursor: pointer;
+}
+
+#poly-settings-btn,
+#poly-quicklinks-btn {
+	padding: 6px 12px;
+	background: #f5f5f5;
+	border: 1px solid #d0d0d0;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.2s ease;
+}
+
+#poly-settings-btn:hover,
+#poly-quicklinks-btn:hover {
+	background: #e8e8e8;
+	border-color: #bbb;
+}
+
+#poly-currency-symbol {
+	font-weight: 600;
+	color: #666;
+}
+
+/* Fee block */
+.poly-fee-block {
+	position: relative;
+	text-align: left;
+	padding: 6px 28px 6px 8px;
+	background: #fafafa;
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+	margin-top: 6px;
+	font-size: 11px;
+	line-height: 1.4;
+}
+
+.poly-fee-block > div {
+	margin-bottom: 3px;
+}
+
+.poly-fee-block > div:first-child {
+	margin-bottom: 0;
+}
+
+.poly-fee-block > table {
+	margin-top: 6px;
+}
+
+/* Tax input */
+#poly-tax {
+	width: 50px;
+	color: #2e7d32;
+	font-weight: 600;
+	padding: 2px 6px;
+	border: 1px solid #81c784;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 11px;
+}
+
+#poly-tax:focus {
+	outline: none;
+	border-color: #4caf50;
+	box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.15);
+}
+
+/* Number badges - Minimal flat style */
+.poly-no {
+	background: #e8e8e8;
+	color: #333;
+	padding: 2px 6px;
+	font-size: 11px;
+	font-weight: 600;
+	border-radius: 3px;
+	display: inline-block;
+	border: 1px solid #d0d0d0;
+}
+
+.poly-no-profit {
+	background: #e3f2fd !important;
+	color: #1565c0 !important;
+	border-color: #90caf9 !important;
+}
+
+.poly-no-days-since {
+	background: #f5f5f5;
+	color: #555;
+	border: 1px solid #d0d0d0;
+}
+/* Fixed width columns */
+.poly-with-fix {
+	width: 120px;
+}
+
+/* Envato info section */
+.poly-envato {
+	font-size: 12px;
+	line-height: 18px;
+	padding: 16px;
+	border: none;
+	background: linear-gradient(135deg, #ffeaa7 0%, #dfe6e9 100%);
+	margin: 12px 0;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.poly-envato-item {
+	margin-bottom: 6px;
+	padding: 4px 0;
+}
+
+ul.poly-time-block {
+	list-style: circle;
+	margin-left: 16px;
+	line-height: 1.6;
+}
+
+.poly-timer {
+	color: #e74c3c;
+	font-size: 14px;
+	font-weight: 600;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 8px;
+	background: rgba(231, 76, 60, 0.1);
+	border-radius: 6px;
+}
+
+#poly-can-send {
+	color: #e74c3c;
+	text-align: center;
+	padding: 8px;
+	margin-top: 8px;
+	font-weight: 500;
+}
+
+.poly-form {
+	margin-bottom: 20px;
+	padding: 16px;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Comment toolbar - Flat design */
+.polydev_toolbar button {
+	background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #2d3436;
+    font-size: 12px;
+    padding: 6px 12px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none !important;
+    font-weight: 500;
+}
+
+.polydev_toolbar button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.polydev_toolbar button:active {
+	transform: translateY(0);
+}
+
+/* Comment form textarea height */
+.simple_form textarea {
+	height: 169px !important;
+	min-height: 169px;
+	resize: vertical;
+}
+
+/* END: Comment toolbar */
+
+/* Common - Floating action buttons */
+.poly-metrics-scroll-to-top, 
+.poly-metrics-scroll-to-bottom,
+.poly-metrics-scroll-to-recommended{
+	width: 30px;
+    height: 30px;
+}
+.poly-metrics-scroll-to-top, 
+.poly-metrics-scroll-to-bottom {
+	position: fixed;
+    right: 16px;
+    bottom: 32px;
+    z-index: 99999;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ffa726 0%, #ef5350 100%);
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(255, 167, 38, 0.4);
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.poly-metrics-scroll-to-top:hover,
+.poly-metrics-scroll-to-bottom:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 6px 16px rgba(255, 167, 38, 0.5);
+}
+
+.poly-metrics-scroll-to-recommended {
+	position: fixed;
+    right: 16px;
+    bottom: 90px;
+    z-index: 99999;
+    cursor: pointer;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(245, 87, 108, 0.4);
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.poly-metrics-scroll-to-recommended:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 6px 16px rgba(245, 87, 108, 0.5);
+}
+
+.poly-metrics-bookmarks {
+	position: fixed;
+    right: 16px;
+    bottom: 124px;
+    z-index: 99999;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+    transition: all 0.3s ease;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.poly-metrics-bookmarks:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 6px 16px rgba(255, 193, 7, 0.5);
+}
+
+.poly-metrics-bookmarks svg {
+	fill: #ffffff;
+	display: block;
+	margin: auto;
+	width: 13px;
+	height: 13px;
+}
+
+.poly-metrics-tools {
+	display: flex;
+	flex-direction: column;
+	font-size: 11px;
+    text-align: right;
+	position: fixed;
+    right: 16px;
+    bottom: 144px;
+    z-index: 99999;
+    cursor: pointer;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.poly-metrics-tools a, 
+.poly-metrics-tools a:visited {
+	color: #ffa726;
+	text-decoration: none;
+	padding: 4px 0;
+	transition: color 0.3s ease;
+}
+
+.poly-metrics-tools a:hover {
+	color: #ef5350;
+	text-decoration: underline;
+}
+
+.poly-metrics-scroll-to-top svg, 
+.poly-metrics-scroll-to-bottom svg,
+.poly-metrics-scroll-to-recommended svg {
+	fill: #ffffff;
+	display: block;
+	margin: auto;
+}
+
+.poly-metrics-scroll-to-top svg, 
+.poly-metrics-scroll-to-bottom svg{
+	width: 24px;
+	height: 24px;
+}
+.poly-metrics-scroll-to-recommended svg {
+	width: 13px; height: 13px
+}
+
+.poly-date-info svg {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+/* END Common */
+
+/* Collapsible animation */
+.poly-collapsible {
+	overflow: hidden;
+}
+
+/* Table wrapper for scroll */
+.poly-table-wrapper {
+	overflow-x: auto;
+	margin-top: 12px;
+}
+
+/* Settings Modal */
+.poly-modal {
+	display: none;
+	position: fixed;
+	z-index: 100000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	overflow: auto;
+	transition: background-color 0.3s ease;
+}
+
+.poly-modal-show {
+	display: block !important;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.poly-modal-content {
+	background-color: #fff;
+	margin: 50px auto;
+	padding: 0;
+	border-radius: 8px;
+	width: 90%;
+	max-width: 800px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-50px);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+.poly-modal-small .poly-modal-content {
+	max-width: 600px;
+}
+
+.poly-modal-show .poly-modal-content {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.poly-modal-header {
+	padding: 16px 20px;
+	background: #f5f5f5;
+	border-bottom: 1px solid #e0e0e0;
+	border-radius: 8px 8px 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.poly-modal-header h3 {
+	margin: 0;
+	font-size: 18px;
+	color: #333;
+}
+
+/* X close button in header only */
+.poly-modal-header .poly-modal-close {
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 1;
+	color: #fff;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	padding: 0;
+	width: 28px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	transition: background 0.2s;
+	opacity: 0.8;
+}
+
+.poly-modal-header .poly-modal-close:hover {
+	background: rgba(255, 255, 255, 0.2);
+	opacity: 1;
+}
+
+/* Cancel button keeps poly-btn-secondary styling */
+
+.poly-modal-body {
+	padding: 20px;
+	max-height: 60vh;
+	overflow-y: auto;
+}
+
+.poly-modal-footer {
+	padding: 16px 20px;
+	background: #f5f5f5;
+	border-top: 1px solid #e0e0e0;
+	border-radius: 0 0 8px 8px;
+	display: flex;
+	gap: 10px;
+	justify-content: flex-end;
+}
+
+.poly-settings-section {
+	margin-bottom: 20px;
+}
+
+.poly-settings-section label {
+	display: block;
+	font-weight: 600;
+	color: #555;
+	margin-bottom: 6px;
+}
+
+.poly-settings-section input,
+.poly-settings-section select {
+	padding: 8px 12px;
+	border: 1px solid #d0d0d0;
+	border-radius: 4px;
+	font-size: 13px;
+	width: 200px;
+}
+
+.poly-settings-section h4 {
+	margin: 16px 0 10px 0;
+	color: #333;
+	font-size: 14px;
+	font-weight: 600;
+	border-bottom: 2px solid #e0e0e0;
+	padding-bottom: 6px;
+}
+
+.poly-settings-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 12px;
+	font-size: 12px;
+}
+
+.poly-settings-table th,
+.poly-settings-table td {
+	padding: 8px;
+	text-align: left;
+	border: 1px solid #e0e0e0;
+}
+
+.poly-settings-table th {
+	background: #f5f5f5;
+	font-weight: 600;
+	color: #555;
+}
+
+.poly-settings-table input {
+	width: 100%;
+	padding: 4px 8px;
+	border: 1px solid #d0d0d0;
+	border-radius: 3px;
+	font-size: 11px;
+}
+
+.poly-btn {
+	padding: 8px 16px;
+	border: 1px solid #d0d0d0;
+	border-radius: 4px;
+	background: #fff;
+	color: #333;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 500;
+	transition: all 0.2s ease;
+}
+
+.poly-btn:hover {
+	background: #f5f5f5;
+	border-color: #bbb;
+}
+
+.poly-btn-primary {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: #fff;
+	border-color: #ffa726;
+}
+
+.poly-btn-primary:hover {
+	background: linear-gradient(135deg, #ff9100 0%, #e53935 100%);
+	border-color: #ff9100;
+}
+
+.poly-btn-secondary {
+	background: #6c757d;
+	color: #fff;
+	border-color: #6c757d;
+}
+
+.poly-btn-secondary:hover {
+	background: #5a6268;
+	border-color: #545b62;
+}
+
+/* Danger button (red) */
+.poly-btn-danger {
+	background: #e74c3c;
+	color: #fff;
+	border-color: #e74c3c;
+}
+
+.poly-btn-danger:hover {
+	background: #c0392b;
+	border-color: #a93226;
+}
+
+.poly-btn-remove,
+.poly-btn-remove-new {
+	padding: 4px 8px;
+	background: #e74c3c;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.poly-btn-remove:hover,
+.poly-btn-remove-new:hover {
+	background: #c0392b;
+}
+
+.poly-btn-link-view,
+.poly-btn-link-remove,
+.poly-btn-link-remove-new {
+	padding: 4px 8px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 0 2px;
+	transition: all 0.2s ease;
+}
+
+.poly-btn-link-view {
+	background: #3498db;
+	color: #fff;
+}
+
+.poly-btn-link-view:hover {
+	background: #2980b9;
+}
+
+.poly-btn-link-remove,
+.poly-btn-link-remove-new {
+	background: #e74c3c;
+	color: #fff;
+}
+
+.poly-btn-link-remove:hover,
+.poly-btn-link-remove-new:hover {
+	background: #c0392b;
+}
+
+/* Quick Links Display */
+#poly-quicklinks-display {
+	margin: 8px 0;
+}
+
+.poly-quicklinks-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding: 10px;
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	align-items: center;
+}
+
+.poly-quicklinks-label {
+	font-size: 11px;
+	font-weight: 600;
+	color: #666;
+	margin-right: 4px;
+}
+
+.poly-quicklink {
+	display: inline-block;
+	padding: 4px 10px;
+	background: #fff;
+	color: #333;
+	text-decoration: none;
+	border: 1px solid #d0d0d0;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 500;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+}
+
+.poly-quicklink:hover {
+	background: #ffa726;
+	color: #fff;
+	border-color: #ffa726;
+	text-decoration: none;
+	transform: translateY(-2px);
+	box-shadow: 0 2px 6px rgba(255, 167, 38, 0.3);
+}
+
+.poly-quicklink:active {
+	transform: translateY(0);
+}
+
+/* Chart Container */
+#poly-chart-container {
+	background: #fff;
+	padding: 12px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	margin-top: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.poly-chart-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	width: 100%;
+}
+
+.poly-chart-col {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.poly-chart-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+.poly-chart-title {
+	margin: 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: #555;
+}
+
+.poly-chart-type-select {
+	padding: 4px 8px;
+	border: 1px solid #d0d0d0;
+	border-radius: 3px;
+	font-size: 11px;
+	background: #fff;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.poly-chart-type-select:hover {
+	border-color: #999;
+}
+
+.poly-chart-type-select:focus {
+	outline: none;
+	border-color: #ffa726;
+	box-shadow: 0 0 0 2px rgba(255, 167, 38, 0.15);
+}
+
+#poly-revenue-chart,
+#poly-pie-chart {
+	max-height: 300px;
+	width: 100%;
+}
+
+/* Edit Page Layout - 2 Column */
+.grid-container.poly-edit-layout {
+	width: 100vw !important;
+	max-width: 100vw !important;
+	display: flex !important;
+	flex-direction: row !important;
+	gap: 20px !important;
+	align-items: flex-start !important;
+}
+
+.grid-container.poly-edit-layout .content {
+	width: 50vw !important;
+	flex-shrink: 0 !important;
+}
+
+/* Auto-resize textarea in edit page */
+.grid-container.poly-edit-layout textarea#description {
+	min-height: 300px;
+	resize: vertical;
+	overflow-y: hidden;
+	transition: height 0.1s ease;
+}
+
+/* Set width 100% for first .horizontal-form .inputs when editor is present */
+.grid-container.poly-edit-layout .horizontal-form .inputs:first-child {
+	width: 100% !important;
+}
+
+.polymetrics-editor {
+	width: 50vw;
+	flex-shrink: 0;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.polymetrics-editor-header {
+	margin-bottom: 20px;
+	padding-bottom: 16px;
+	border-bottom: 2px solid #f0f0f0;
+}
+
+.polymetrics-editor-header h3 {
+	margin: 0 0 8px 0;
+	font-size: 20px;
+	color: #333;
+	font-weight: 600;
+}
+
+.polymetrics-editor-header p {
+	margin: 0;
+	font-size: 13px;
+	color: #666;
+}
+
+.polymetrics-editor-content {
+	font-size: 14px;
+	color: #555;
+	line-height: 1.6;
+}
+
+.polymetrics-loading {
+	padding: 20px;
+	text-align: center;
+	color: #999;
+	font-style: italic;
+}
+
+.polymetrics-preview-wrapper {
+	padding: 16px;
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.polymetrics-preview-wrapper::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.polymetrics-preview-wrapper h1,
+.polymetrics-preview-wrapper h2,
+.polymetrics-preview-wrapper h3,
+.polymetrics-preview-wrapper h4,
+.polymetrics-preview-wrapper h5,
+.polymetrics-preview-wrapper h6 {
+	margin-top: 0;
+	margin-bottom: 12px;
+	color: #333;
+}
+
+.polymetrics-preview-wrapper p {
+	margin-bottom: 12px;
+	line-height: 1.6;
+}
+
+.polymetrics-preview-wrapper ul,
+.polymetrics-preview-wrapper ol {
+	margin: 12px 0;
+	padding-left: 24px;
+}
+
+.polymetrics-preview-wrapper li {
+	margin-bottom: 6px;
+}
+
+.polymetrics-preview-wrapper a {
+	color: #ffa726;
+	text-decoration: none;
+}
+
+.polymetrics-preview-wrapper a:hover {
+	text-decoration: underline;
+}
+
+.polymetrics-preview-wrapper code {
+	background: #f5f5f5;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-family: monospace;
+	font-size: 13px;
+}
+
+.polymetrics-preview-wrapper pre {
+	background: #f5f5f5;
+	padding: 12px;
+	border-radius: 4px;
+	overflow-x: auto;
+	border: 1px solid #e0e0e0;
+}
+
+.polymetrics-preview-wrapper img {
+	margin: 0px auto;
+	max-width: 100%;
+	height: auto;
+	border-radius: 4px;
+	display: block;
+	clear: both;
+	float: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.poly-elements {
+		padding: 8px;
+	}
+	
+	.poly-table {
+		font-size: 10px;
+		min-width: 700px;
+	}
+	
+	.poly-table tr td {
+		padding: 3px 4px;
+	}
+	
+	.poly-toggle-btn {
+		padding: 5px 10px;
+		font-size: 10px;
+	}
+	
+	.poly-metrics-scroll-to-top, 
+	.poly-metrics-scroll-to-bottom {
+		width: 44px;
+		height: 44px;
+	}
+	
+	.poly-metrics-scroll-to-recommended,
+	.poly-metrics-bookmarks {
+		width: 44px;
+		height: 44px;
+	}
+	
+	.poly-metrics-bookmarks svg {
+		width: 16px;
+		height: 16px;
+	}
+	
+	.poly-modal-content {
+		width: 95%;
+		margin: 20px auto;
+	}
+	
+	.poly-toolbar-row {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.poly-chart-row {
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+	
+	#poly-revenue-chart,
+	#poly-pie-chart {
+		max-height: 250px;
+	}
+	
+	.grid-container.poly-edit-layout {
+		flex-direction: column !important;
+		width: 100% !important;
+	}
+	
+	.grid-container.poly-edit-layout .content,
+	.polymetrics-editor {
+		width: 100% !important;
+	}
+}
+
+/* ============= Bookmark Styles ============= */
+
+/* Bookmark icon next to h1 */
+.poly-bookmark-icon {
+	display: inline-block;
+	margin-left: 10px;
+	cursor: pointer;
+	color: #6c757d;
+	transition: all 0.2s ease;
+	vertical-align: middle;
+}
+
+.poly-bookmark-icon:hover {
+	color: #ffc107;
+	transform: scale(1.1);
+}
+
+.poly-bookmark-icon.bookmarked {
+	color: #ffc107;
+	fill: #ffc107;
+}
+
+/* Bookmark Panel (Sidebar) */
+.poly-panel {
+	position: fixed;
+	top: 0;
+	right: -400px;
+	width: 400px;
+	height: 100vh;
+	background: #fff;
+	box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+	z-index: 10000;
+	transition: right 0.3s ease;
+	display: flex;
+	flex-direction: column;
+}
+
+.poly-panel.poly-panel-show {
+	right: 0;
+}
+
+.poly-panel-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	background: linear-gradient(135deg, #ffa726 0%, #ef5350 100%);
+	color: #fff;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.poly-panel-header h4 {
+	color:#fff;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.poly-panel-close {
+	font-size: 24px;
+	cursor: pointer;
+	line-height: 1;
+	opacity: 0.8;
+	transition: opacity 0.2s;
+}
+
+.poly-panel-close:hover {
+	opacity: 1;
+}
+
+.poly-panel-search {
+	padding: 12px 15px;
+	border-bottom: 1px solid #e0e0e0;
+	background: #f9f9f9;
+}
+
+.poly-panel-search-input {
+	width: 100%;
+	padding: 8px 12px;
+	border: 1px solid #e0e0e0;
+	border-radius: 20px;
+	font-size: 13px;
+	outline: none;
+	transition: all 0.2s ease;
+	background: #fff;
+}
+
+.poly-panel-search-input:focus {
+	border-color: #ffa726;
+	box-shadow: 0 0 0 2px rgba(255, 167, 38, 0.1);
+}
+
+.poly-panel-body {
+	padding: 15px;
+	flex: 1;
+	overflow-y: auto;
+}
+
+.poly-panel-footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 12px 15px;
+	background: #f5f5f5;
+	border-top: 1px solid #e0e0e0;
+	gap: 5px;
+}
+
+.poly-panel-footer-link {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 6px 12px;
+	font-size: 12px;
+	color: #555;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+}
+
+.poly-panel-footer-link:hover {
+	background: #fff;
+	color: #ffa726;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.poly-panel-empty {
+	text-align: center;
+	color: #999;
+	padding: 40px 20px;
+	font-size: 14px;
+}
+
+/* Bookmark Category Groups */
+.poly-bookmark-category-group {
+	margin-bottom: 25px;
+}
+
+.poly-bookmark-category-title {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	padding: 8px 6px;
+	border-bottom: 2px solid #f0f0f0;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background 0.2s ease;
+	user-select: none;
+}
+
+.poly-bookmark-category-title:hover {
+	background: rgba(255, 167, 38, 0.05);
+}
+
+.poly-category-toggle-icon {
+	font-size: 10px;
+	transition: transform 0.2s ease;
+	display: inline-block;
+	width: 12px;
+}
+
+.poly-category-dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.poly-bookmark-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.poly-bookmark-item {
+	padding: 10px 12px;
+	background: #f8f9fa;
+	border-radius: 4px;
+	transition: all 0.2s ease;
+}
+
+.poly-bookmark-item:hover {
+	background: #e9ecef;
+	transform: translateX(5px);
+}
+
+.poly-bookmark-link {
+	color: #333;
+	text-decoration: none;
+	font-size: 13px;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.poly-bookmark-link:hover {
+	color: #ffa726;
+}
+
+/* Additional button styles for bookmark */
+.poly-btn-sm {
+	padding: 6px 12px;
+	font-size: 13px;
+}
+
+.poly-input-color {
+	width: 60px;
+	height: 38px;
+	padding: 4px;
+	border: 2px solid #e0e0e0;
+	border-radius: 6px;
+	cursor: pointer;
+	background: #fff;
+	vertical-align: middle;
+}
+
+.poly-input-color::-webkit-color-swatch-wrapper {
+	padding: 2px;
+}
+
+.poly-input-color::-webkit-color-swatch {
+	border: none;
+	border-radius: 4px;
+}
+
+.poly-input-color::-moz-color-swatch {
+	border: none;
+	border-radius: 4px;
+}
+
+.poly-btn-danger {
+	background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.poly-btn-danger:hover {
+	background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
+}
+
+/* Form Group Styles */
+.poly-form-group {
+	margin-bottom: 15px;
+}
+
+.poly-form-group label {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #555;
+}
+
+.poly-form-group .poly-input,
+.poly-form-group .poly-select {
+	width: 100%;
+	padding: 8px 12px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	font-size: 13px;
+	transition: border-color 0.2s;
+}
+
+.poly-form-group .poly-input:focus,
+.poly-form-group .poly-select:focus {
+	border-color: #ffa726;
+	outline: none;
+}
+    
